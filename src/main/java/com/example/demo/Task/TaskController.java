@@ -1,11 +1,13 @@
 package com.example.demo.Task;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping(path="api/v1/task")
-public class TaskController {
+public class TaskController  {
 
     private final TaskService taskService;
 

@@ -18,6 +18,7 @@ public class TaskService {
     }
 
     public List<Task> getTasks(){
+        System.out.println("here");
         return TaskRepository.findAll();
     }
 
